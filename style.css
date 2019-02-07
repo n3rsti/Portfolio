@@ -102,6 +102,13 @@ nav {
     margin-left: 5%;
     font-size: 1.4rem;
     color: #f1c40f;
+    opacity: 0;
+    transition: .6s all ease-in-out;
+    transform: translateY(20px);
+}
+.about-me-appear {
+    opacity: 1;
+    transform: translateY(0);
 }
 .knowledge {
     position: absolute;
