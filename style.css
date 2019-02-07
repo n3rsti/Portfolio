@@ -22,19 +22,6 @@ section {
     height: 100%;
     position: relative;
 }
-.cursor {
-    width: 30px;
-    height: 30px;
-    border-radius: 100%;
-    background: white;
-    pointer-events: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    box-shadow: 0 0 1em white;
-    opacity: 0;
-}
 .hello {
     font-size: 3rem;
     color: white;
@@ -70,7 +57,7 @@ nav {
     align-items: center;
     z-index: 1000;
 }
-.fas {
+.fas, .fab {
     font-size: 2.5rem;
     color: #231f20;
 }
@@ -181,14 +168,9 @@ nav {
     border-radius: 3px;
     will-change: transform;
     position: relative;
+    z-index: 100;
 }
 .in_work a {
-    margin: calc(50% - 1.5rem) 0 0 0;
-    font-size: 1.5rem;
-    line-height: 1.5rem;
-    width: 100%;
-    height: 100%;
-    text-align: center;
     color: #231f20;
     text-decoration: none;
     text-transform: uppercase;
@@ -230,9 +212,26 @@ nav {
     color: #f1c40f;
     font-weight: 700;
 }
+#section-5 {
+    align-items: center;
+}
 #section-5 h2 {
     text-align: center;
     color: #231f20;
     font-weight: 700;
     font-size: 2rem;
+}
+.contact {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-content: space-between;
+}
+.contact a {
+    margin: 0 40px 0 40px;
+}
+#section-5 i {
+    font-size: 5rem;
 }
