@@ -1,3 +1,21 @@
+var typed = new Typed('.hello', {
+    strings: ["Hi,^300 I'm"],
+    typeSpeed: 60,
+    showCursor: false
+});
+var typed = new Typed('.type', {
+    strings: ["^600 <p class=\"letter-k\">K</p>rzysztof"],
+    typeSpeed: 60,
+    showCursor: false
+});
+var typed = new Typed('.languages', {
+    strings: ["HTML", "CSS", "Javascript", "Vue.JS", "GIT^1000"],
+    typeSpeed: 60,
+    backSpeed: 60,
+    backDelay: 800,
+    loop: true
+});
+
 var screenHeight = window.innerHeight;
 
 function appear() {
