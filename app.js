@@ -16,11 +16,11 @@ var typed = new Typed('.languages', {
     loop: true
 });
 
-var screenHeight = window.innerHeight;
 
 function appear() {
     var aboutMe = document.querySelector('.about-me');
     var aboutMe_position = aboutMe.getBoundingClientRect().top;
+    var screenHeight = window.innerHeight;
     
     if(aboutMe_position < screenHeight / 1.4){
         aboutMe.classList.add('about-me-appear');

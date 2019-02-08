@@ -13,13 +13,18 @@ body {
     overflow-x: hidden;
     margin: 0;
     padding: 0;
+    width: 100%;
+    height: 100vh;
 }
-section {
+a, div {
+    -webkit-tap-highlight-color: transparent;
+}
+.section {
     display: flex;
     flex-direction: column;
     justify-items: center;
     width: 100%;
-    height: 100%;
+    min-height: 100%;
     position: relative;
 }
 .hello {
@@ -27,7 +32,7 @@ section {
     color: white;
     font-weight: 700;
     text-transform: uppercase;
-    margin-top: 200px;
+    margin-top: 30vh;
     margin-bottom: 0;
     margin-left: 10px;
 }
@@ -98,8 +103,10 @@ nav {
     margin-bottom: 20%;
 }
 .about-me {
+    margin-top: 0;
     width: 90%;
     margin-left: 5%;
+    margin-bottom: 5%;
     font-size: 1.4rem;
     color: #f1c40f;
     opacity: 0;
@@ -135,6 +142,7 @@ nav {
     height: auto;
     align-items: center;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 .work {
     width: 220px;
@@ -149,6 +157,7 @@ nav {
     background-position: center;
     margin: 20px;
     cursor: pointer;
+    flex-wrap: wrap;
 }
 .work:nth-child(1){
     background: url(img/kalkulator-ocen.png) no-repeat center;
@@ -226,7 +235,7 @@ nav {
     text-align: center;
     color: #231f20;
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 3rem;
 }
 .contact {
     position: absolute;
@@ -241,4 +250,47 @@ nav {
 }
 #section-5 i {
     font-size: 5rem;
+}
+@media(max-height: 520px){
+    .arrow {
+        display: none;
+    }
+}
+@media(min-width: 440px){
+    html {
+        font-size: 12px;
+    }
+    .work {
+        width: 300px;
+        height: 200px;
+    }
+}
+@media(min-width: 800px){
+    html {
+        font-size: 13px;
+    }
+    .work {
+        width: 350px;
+        height: 250px;
+    }
+    .sec-2__user {
+        margin-bottom: 10%;
+    }
+}
+@media(min-width: 1000px){
+    html {
+        font-size: 14px;
+    }
+    #section-5 i {
+        font-size: 8rem;
+        margin: 50px;
+    }
+    .hello {
+        margin-left: 10%;
+    }
+}
+@media(min-width: 1200px){
+    html {
+        font-size: 15px;
+    }
 }
