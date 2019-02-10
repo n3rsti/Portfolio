@@ -61,10 +61,6 @@ nav {
     align-items: center;
     z-index: 1000;
 }
-nav a .fab, nav .fab {
-    display: none;
-    position: absolute;
-}
 .media {
     display: none;
 }
@@ -299,6 +295,9 @@ nav a .fab, nav .fab {
     }
     #section-5 i {
         font-size: 6rem;
+    }
+    nav a, .media {
+        display: block;
     }
     .hello {
         margin-left: 50px;
