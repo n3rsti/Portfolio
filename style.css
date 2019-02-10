@@ -3,7 +3,6 @@
 }
 html {
     font-size: 10px;
-    scroll-behavior: smooth;
     font-family: 'Montserrat', sans-serif;
     color: white;
 }
@@ -62,6 +61,14 @@ nav {
     align-items: center;
     z-index: 1000;
 }
+nav a .fab {
+    display: none;
+    position: absolute;
+}
+.media {
+    display: none;
+}
+
 .fas, .fab {
     font-size: 2.5rem;
     color: #231f20;
@@ -221,7 +228,7 @@ nav {
 .more {
     font-size: 2rem;
     width: 90%;
-    margin: 20px 0 30px 0;
+    margin: 5% 0 5% 0;
     text-align: center;
 }
 .more a {
@@ -246,7 +253,7 @@ nav {
     align-content: space-between;
 }
 .contact a {
-    margin: 0 40px 0 40px;
+    margin: 0 20px 0 20px;
 }
 #section-5 i {
     font-size: 5rem;
@@ -254,6 +261,11 @@ nav {
 @media(max-height: 520px){
     .arrow {
         display: none;
+    }
+}
+@media(max-height: 520px) and (max-width: 800px){
+    .nav {
+        height: 13%;
     }
 }
 @media(min-width: 440px){
@@ -281,12 +293,58 @@ nav {
     html {
         font-size: 14px;
     }
+    .section {
+        width: calc(100% - 80px);
+        margin-left: 80px;
+    }
     #section-5 i {
-        font-size: 8rem;
-        margin: 50px;
+        font-size: 6rem;
     }
     .hello {
-        margin-left: 10%;
+        margin-left: 50px;
+    }
+    nav {
+        top: 0;
+        left: 0;
+        width: 80px;
+        height: 100vh;
+        flex-direction: column;
+        background: #231f20;
+        justify-content: center;
+    }
+    nav .fas {
+        color: #f1c40f;
+        margin: 30px;
+        font-size: 2rem;
+    }
+    nav a:nth-child(2) .fas{
+        margin-top: 100px;
+    }
+    .media img {
+        display: block;
+        width: 80%;
+        position: absolute;
+        top: 5%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .media {
+        display: block;
+    }
+    nav a {
+        text-decoration: none;
+    }
+    nav .fab {
+        display: block;
+        color: #f1c40f;
+        position: absolute;
+        bottom: 5%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    footer {
+        width: calc(100% - 80px);
+        margin-left: 80px;
     }
 }
 @media(min-width: 1200px){
